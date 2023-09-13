@@ -6,6 +6,7 @@ import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
 import NavBar from "./components/NavBar";
+import BottomNav from "./components/BottomNav";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/resume" element={<Resume />}></Route>
         <Route path="/Contact" element={<Contact />}></Route>
       </Routes>
+      <BottomNav />
     </>
   );
 }

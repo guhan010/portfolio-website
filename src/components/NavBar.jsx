@@ -4,8 +4,8 @@ import PropTypes from "prop-types";
 export default function Navbar() {
   return (
     <nav className="nav">
-      <Link to="/" className="site-title">
-        tenny
+      <Link to="/" className="site-title" style={{ marginLeft: "30px" }}>
+        <em>tenny</em>
       </Link>
       <ul>
         <CustomLink to="/about">about</CustomLink>
