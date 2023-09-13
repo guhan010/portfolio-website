@@ -16,7 +16,7 @@ const BottomNav = () => {
       <Typography
         variant="h5"
         sx={{
-          fontSize: "16px",
+          fontSize: "10px",
           fontFamily: "sans-serif",
           fontWeight: "400",
           justifyContent: "center",
@@ -25,7 +25,7 @@ const BottomNav = () => {
       >
         &copy; Guhan Eswaran
       </Typography>
-      <Typography>All Rights Reserved</Typography>
+      <Typography sx={{ fontSize: "10px" }}>All Rights Reserved</Typography>
     </Box>
   );
 };
