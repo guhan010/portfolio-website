@@ -1,4 +1,4 @@
-import { Box, Divider, Typography, colors } from "@mui/material";
+import { Box, Divider, Typography } from "@mui/material";
 import name from "../assets/name.webp";
 
 const Home = () => {
