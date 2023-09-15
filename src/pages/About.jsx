@@ -1,6 +1,7 @@
 import { Box, Divider, Grid, Typography } from "@mui/material";
 import about from "../assets/about.webp";
 import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
+import Skills from "../components/Skills";
 
 const About = () => {
   return (
@@ -39,7 +40,7 @@ const About = () => {
         ></img>
       </Grid>
       <Divider variant="middle" />
-      <Grid>
+      {/* <Grid>
         <Grid2>
           <Box sx={{ textAlign: "center", marginTop: "50px" }}>
             <Typography
@@ -91,7 +92,8 @@ const About = () => {
             </Box>
           </Grid>
         </Grid2>
-      </Grid>
+      </Grid> */}
+      <Skills />
     </>
   );
 };
