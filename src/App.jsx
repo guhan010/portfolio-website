@@ -5,8 +5,9 @@ import Portfolio from "./pages/Portfolio";
 import Blog from "./pages/Blog";
 import Contact from "./pages/Contact";
 import Resume from "./pages/Resume";
-import NavBar from "./components/NavBar";
 import BottomNav from "./components/BottomNav";
+import TennyCalc from "./pages/portfolio/TennyCalc";
+import NavBar from "./components/Navbar";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/blog" element={<Blog />}></Route>
         <Route path="/resume" element={<Resume />}></Route>
         <Route path="/Contact" element={<Contact />}></Route>
+        <Route path="/portfolio/tenny-calc" element={<TennyCalc />}></Route>
       </Routes>
       <BottomNav />
     </>

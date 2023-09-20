@@ -1,12 +1,11 @@
-import { Box, Divider, Grid, Typography } from "@mui/material";
-import about from "../assets/about.webp";
-import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
-import Skills from "../components/Skills";
-import AboutIntro from "../components/AboutIntro";
+// import { Box, Divider, Grid, Typography } from "@mui/material";
+// import about from "../assets/about.webp";
+// import Grid2 from "@mui/material/Unstable_Grid2/Grid2";
+// import Skills from "../components/Skills";
 
 const About = () => {
   return (
-    <AboutIntro />
+    <h1>about</h1>
     // <>
     //   <Grid display="flex" justifyContent="space-around" margin="60px 110px">
     //     <Grid2>
@@ -42,60 +41,74 @@ const About = () => {
     //     ></img>
     //   </Grid>
     //   <Divider variant="middle" />
-    //   {/* <Grid>
-    //   <Grid2>
-    //     <Box sx={{ textAlign: "center", marginTop: "50px" }}>
-    //       <Typography
-    //         variant="h3"
-    //         sx={{
-    //           color: "#333333",
-    //           fontWeight: "700",
-    //           fontSize: "30px",
-    //           padding: "10px",
-    //         }}
-    //       >
-    //         Technologies I&apos;ve Worked with
-    //       </Typography>
-    //     </Box>
-    //     <Grid display="flex" justifyContent="space-around" margin="30px 80px">
-    //       <Box
-    //         sx={{
-    //           width: "30%",
-    //           justifyContent: "center",
-    //           alignItems: "center",
-    //         }}
-    //       >
+    //   <Grid>
+    //     <Grid2>
+    //       <Box sx={{ textAlign: "center", marginTop: "50px" }}>
     //         <Typography
-    //           sx={{ color: "#333333",
-    //           fontWeight: "700",
-    //           fontSize: "20px",bgcolor:'#BFC9CA',justifyContent: "center", textAlign: "center" }}
+    //           variant="h3"
+    //           sx={{
+    //             color: "#333333",
+    //             fontWeight: "700",
+    //             fontSize: "30px",
+    //             padding: "10px",
+    //           }}
     //         >
-    //           frontend
-    //         </Typography>
-
-    //       </Box>
-    //       <Box sx={{ width: "30%" }}>
-    //         <Typography
-    //           sx={{ color: "#333333",
-    //           fontWeight: "700",
-    //           fontSize: "20px",bgcolor:'#BFC9CA', justifyContent: "center", textAlign: "center" }}
-    //         >
-    //           backend
+    //           Technologies I&apos;ve Worked with
     //         </Typography>
     //       </Box>
-    //       <Box sx={{ width: "30%" }}>
-    //         <Typography
-    //           sx={{ color: "#333333",
-    //           fontWeight: "700",
-    //           fontSize: "20px",bgcolor:'#BFC9CA', justifyContent: "center", textAlign: "center" }}
+    //       <Grid display="flex" justifyContent="space-around" margin="30px 80px">
+    //         <Box
+    //           sx={{
+    //             width: "30%",
+    //             justifyContent: "center",
+    //             alignItems: "center",
+    //           }}
     //         >
-    //           devops
-    //         </Typography>
-    //       </Box>
-    //     </Grid>
-    //   </Grid2>
-    // </Grid> */}
-    //   <Skills />
+    //           <Typography
+    //             sx={{
+    //               color: "#333333",
+    //               fontWeight: "700",
+    //               fontSize: "20px",
+    //               bgcolor: "#BFC9CA",
+    //               justifyContent: "center",
+    //               textAlign: "center",
+    //             }}
+    //           >
+    //             frontend
+    //           </Typography>
+    //         </Box>
+    //         <Box sx={{ width: "30%" }}>
+    //           <Typography
+    //             sx={{
+    //               color: "#333333",
+    //               fontWeight: "700",
+    //               fontSize: "20px",
+    //               bgcolor: "#BFC9CA",
+    //               justifyContent: "center",
+    //               textAlign: "center",
+    //             }}
+    //           >
+    //             backend
+    //           </Typography>
+    //         </Box>
+    //         <Box sx={{ width: "30%" }}>
+    //           <Typography
+    //             sx={{
+    //               color: "#333333",
+    //               fontWeight: "700",
+    //               fontSize: "20px",
+    //               bgcolor: "#BFC9CA",
+    //               justifyContent: "center",
+    //               textAlign: "center",
+    //             }}
+    //           >
+    //             devops
+    //           </Typography>
+    //         </Box>
+    //       </Grid>
+    //     </Grid2>
+    //   </Grid>
+    //   {/* <Skills /> */}
     // </>
   );
 };
