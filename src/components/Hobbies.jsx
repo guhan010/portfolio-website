@@ -18,7 +18,7 @@ function About1() {
           <Box
             style={{
               padding: 10,
-              backgroundColor: "#d7d7d7",
+              backgroundColor: "whitesmoke",
               textAlign: "center",
               maxWidth: "400px", // Adjust the maximum width as needed
               margin: "0 auto", // Center align the content
@@ -35,7 +35,7 @@ function About1() {
           <Box
             style={{
               padding: 10,
-              backgroundColor: "#d7d7d7",
+              backgroundColor: "whitesmoke",
               maxWidth: "400px", // Adjust the maximum width as needed
               margin: "0 auto", // Center align the content
             }}
@@ -43,7 +43,7 @@ function About1() {
             <Typography
               variant="body1"
               textAlign="left"
-              sx={{ fontSize: "18px" }}
+              sx={{ fontSize: "15px" }}
             >
               Techie with an hobby of building and optimizing computer systems,
               crafting high-performance PCs tailored to perfection
@@ -59,7 +59,7 @@ function About1() {
           >
             <Typography
               variant="body1"
-              sx={{ marginY: "8px", fontSize: "18px" }}
+              sx={{ marginY: "8px", fontSize: "14px" }}
             >
               I drink a lot of tea <br />
               I&apos;m into interior design

@@ -9,8 +9,9 @@ function About1() {
         <Grid item xs={12} sm={6} md={6}>
           <Box
             style={{
-              backgroundColor: "#d7d7d7",
-              textAlign: "center",
+              padding: "10px",
+              backgroundColor: "whitesmoke",
+              textAlign: "left",
               maxWidth: "400px", // Adjust the maximum width as needed
               margin: "0 auto", // Center align the content
             }}
@@ -18,7 +19,7 @@ function About1() {
             <Typography
               variant="h1"
               className="MuiTypography--h1 MuiTypography-responsiveFontSm"
-              sx={{ fontSize: "100px", fontWeight: "700", color: "#333333" }}
+              sx={{ fontSize: "80px", fontWeight: "700", color: "#333333" }}
             >
               about..
             </Typography>
@@ -26,14 +27,14 @@ function About1() {
           <Box
             style={{
               padding: 10,
-              backgroundColor: "#d7d7d7",
+              backgroundColor: "whitesmoke",
               textAlign: "left",
               maxWidth: "400px", // Adjust the maximum width as needed
               margin: "0 auto", // Center align the content
             }}
           >
-            <Typography variant="body1" sx={{ fontSize: "18px" }}>
-              Hi! I&apos;m a Full Stack Developer based in India.
+            <Typography variant="body1" sx={{ fontSize: "15px" }}>
+              Hi.. I&apos;m a Full Stack Developer based in India.
             </Typography>
           </Box>
           <Box
@@ -46,7 +47,7 @@ function About1() {
           >
             <Typography
               variant="body1"
-              sx={{ marginY: "8px", fontSize: "18px" }}
+              sx={{ marginY: "8px", fontSize: "15px" }}
             >
               I channel my meticulousness, passion for creation, and tireless
               commitment towards a purpose-driven work ethic. This fuels my

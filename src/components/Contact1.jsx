@@ -9,7 +9,7 @@ const Contact1 = () => {
           <Box
             style={{
               padding: "10px",
-              backgroundColor: "#d7d7d7",
+              backgroundColor: "whitesmoke",
               textAlign: "left",
               maxWidth: "400px", // Adjust the maximum width as needed
               margin: "0 auto", // Center align the content
@@ -26,7 +26,7 @@ const Contact1 = () => {
           <Box
             style={{
               padding: 10,
-              backgroundColor: "#d7d7d7",
+              backgroundColor: "whitesmoke",
               textAlign: "left",
               maxWidth: "400px", // Adjust the maximum width as needed
               margin: "0 auto", // Center align the content
