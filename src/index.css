@@ -9,7 +9,7 @@ body {
 .nav {
   background-color: black;
   color: white;
-  font-family: "Sacramento", cursive;
+  font-family: "Quicksand", sans-serif;
   font-size: x-large;
   display: flex;
   justify-content: space-between;
@@ -22,7 +22,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Quicksand", sans-serif;
-  font-size: 18px;
+  font-size: 1px;
   font-weight: 500;
   list-style: none;
   display: flex;
@@ -36,4 +36,58 @@ body {
   display: flex;
   align-items: center;
   padding: 1rem;
+}
+.home {
+  color: whitesmoke;
+  text-decoration: none;
+  font-family: "Sacramento", cursive !important;
+}
+
+.mobile-navigation {
+  font-size: 10px;
+}
+
+.navigation-menu li {
+  font-size: 13px;
+  font-family: "Quicksand", sans-serif;
+}
+.navigation-menu a:hover {
+  color: brown;
+}
+.active {
+  color: crimson !important;
+  font-family: "Quicksand", sans-serif !important ;
+  font-size: 13px !important;
+  font-weight: 700 !important;
+}
+.linkedin {
+  text-decoration: none;
+  color: #0288d1;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+.github {
+  text-decoration: none;
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+.twitter {
+  text-decoration: none;
+  color: black;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+.instagram {
+  text-decoration: none;
+  color: #f55376;
+  font-family: "Raleway", sans-serif;
+  font-size: 15px;
+  font-weight: 600;
+}
+.social:hover {
+  opacity: 0.65;
 }

@@ -30,7 +30,7 @@ const NavBar = () => {
         component="div"
         sx={{ flexGrow: 1, my: 2 }}
       >
-        <NavLink className="active" to={"/"}>
+        <NavLink className="home" to={"/"}>
           <em>tenny</em>
         </NavLink>
       </Typography>
@@ -81,9 +81,9 @@ const NavBar = () => {
               color={"gray"}
               variant="h6"
               component="div"
-              sx={{ flexGrow: 1, ml: 3, fontFamily: "cursive" }}
+              sx={{ flexGrow: 1, ml: 3 }}
             >
-              <NavLink className="active" to={"/"}>
+              <NavLink className="home" to={"/"}>
                 <em>tenny</em>
               </NavLink>
             </Typography>

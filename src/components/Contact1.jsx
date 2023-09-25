@@ -1,5 +1,9 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Container, Divider, Grid, Icon, Typography } from "@mui/material";
 import about from "../assets/about.webp";
+import twitter from "../assets/twitter.png";
+import linkedin from "../assets/linkedin.png";
+import instagram from "../assets/instagram.png";
+import github from "../assets/github.svg";
 
 const Contact1 = () => {
   return (
@@ -25,7 +29,7 @@ const Contact1 = () => {
           </Box>
           <Box
             style={{
-              padding: 10,
+              padding: 16,
               backgroundColor: "whitesmoke",
               textAlign: "left",
               maxWidth: "400px", // Adjust the maximum width as needed
@@ -45,16 +49,117 @@ const Contact1 = () => {
               margin: "0 auto", // Center align the content,
             }}
           >
-            <Typography
-              variant="body1"
-              sx={{ marginY: "8px", fontSize: "15px" }}
-            >
-              I channel my meticulousness, passion for creation, and tireless
-              commitment towards a purpose-driven work ethic. This fuels my
-              eagerness to create a significant impact within a thriving
-              organization, ultimately contributing to the transformation of our
-              world.
-            </Typography>
+            <Container>
+              <Grid container spacing={2}>
+                {/* Box 1 */}
+                <Grid item xs={12} sm={12} md={6} lg={6} maxWidth="50%">
+                  <a
+                    href="https://www.linkedin.com/in/guhan-eswaran-32a5ba254/"
+                    className="linkedin"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Box
+                      className="social"
+                      display="flex"
+                      alignItems="center"
+                      gap={1}
+                    >
+                      <img
+                        src={linkedin}
+                        style={{ height: "30px", width: "30px" }}
+                      />
+                      LinkedIn
+                    </Box>
+                  </a>
+                </Grid>
+
+                {/* Box 2 */}
+                <Grid item xs={12} sm={12} md={6} lg={6} maxWidth="50%">
+                  <a
+                    href="https://github.com/guhan010"
+                    className="github"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Box
+                      className="social"
+                      display="flex"
+                      alignItems="center"
+                      gap={1}
+                    >
+                      <img
+                        src={github}
+                        style={{ height: "30px", width: "30px" }}
+                      />
+                      Github
+                    </Box>
+                  </a>
+                </Grid>
+
+                {/* Box 3 */}
+                <Grid
+                  item
+                  xs={12}
+                  sm={12}
+                  md={6}
+                  lg={6}
+                  maxWidth="50%"
+                  marginY={2}
+                >
+                  <a
+                    href="https://twitter.com/__picasso___"
+                    className="twitter"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Box
+                      className="social"
+                      display="flex"
+                      alignItems="center"
+                      gap={1}
+                    >
+                      <img
+                        src={twitter}
+                        style={{ height: "30px", width: "30px" }}
+                      />
+                      Twitter
+                    </Box>
+                  </a>
+                </Grid>
+
+                {/* Box 4 */}
+                <Grid
+                  item
+                  xs={12}
+                  sm={12}
+                  md={6}
+                  lg={6}
+                  maxWidth="50%"
+                  marginY={2}
+                >
+                  <a
+                    href="https://www.instagram.com/_da_vinci.__/"
+                    className="instagram"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Box
+                      className="social"
+                      display="flex"
+                      alignItems="center"
+                      gap={1}
+                    >
+                      <img
+                        src={instagram}
+                        style={{ height: "30px", width: "30px" }}
+                      />
+                      Instagram
+                    </Box>
+                  </a>
+                </Grid>
+              </Grid>
+            </Container>
           </Box>
         </Grid>
         <Grid item xs={12} sm={6} md={4}>
@@ -67,6 +172,7 @@ const Contact1 = () => {
           </Box>
         </Grid>
       </Grid>
+      <Divider variant="middle" />
     </div>
   );
 };
