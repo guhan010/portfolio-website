@@ -2,7 +2,7 @@ import calculator from "./../assets/calculator.png";
 
 const calcimage = () => {
   return (
-    <div className="responsive-image-container" style={{ margin: "60px 30px" }}>
+    <div className="responsive-image-container" style={{ margin: "40px 30px" }}>
       <img
         className="responsive-image"
         src={calculator}
