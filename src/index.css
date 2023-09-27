@@ -91,3 +91,37 @@ body {
 .social:hover {
   opacity: 0.65;
 }
+.responsive-image-container {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.responsive-image {
+  max-width: 100%;
+  height: auto;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.4);
+}
+/* Media query for screens with a maximum width of 768px (tablet-sized screens) */
+@media (max-width: 768px) {
+  .responsive-image {
+    max-width: 80%; /* Adjust the maximum width for tablet-sized screens */
+    max-height: 80%;
+  }
+}
+
+/* Media query for screens with a maximum width of 480px (mobile-sized screens) */
+@media (max-width: 480px) {
+  .responsive-image {
+    max-width: 80%; /* Adjust the maximum width for mobile-sized screens */
+    max-height: 80%;
+  }
+}
+/* Media query for screens with a minimum width of 1024px (desktop-sized screens) */
+@media (min-width: 1024px) {
+  .responsive-image {
+    max-width: 80%; /* Adjust the maximum width for desktop-sized screens */
+    max-height: 60%;
+  }
+}
