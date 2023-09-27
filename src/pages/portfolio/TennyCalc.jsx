@@ -6,6 +6,10 @@ import Calcimage02 from "../../components/Calc/Calcimage02";
 import Calc04 from "../../components/Calc/Calc04";
 import Calc05 from "../../components/Calc/Calc05";
 import Calc01 from "../../components/Calc/Calc01";
+import Calcimg03 from "../../components/Calc/Calcimg03";
+import Calc06 from "../../components/Calc/Calc06";
+import Calcimg04 from "../../components/Calc/Calcimg04";
+import { Divider } from "@mui/material";
 
 const TennyCalc = () => {
   return (
@@ -17,6 +21,10 @@ const TennyCalc = () => {
       <Calcimage02 />
       <Calc04 />
       <Calc05 />
+      <Calcimg04 />
+      <Calc06 />
+      <Calcimg03 />
+      <Divider variant="middle" sx={{ marginTop: "50px" }} />
     </>
   );
 };
