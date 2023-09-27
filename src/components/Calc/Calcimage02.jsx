@@ -1,4 +1,4 @@
-import reacthooks from "./../assets/reacthooks.png";
+import reacthooks from "../../assets/reacthooks.png";
 
 const Calcimage02 = () => {
   return (

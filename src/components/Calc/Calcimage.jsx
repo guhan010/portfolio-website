@@ -1,4 +1,4 @@
-import calculator from "./../assets/calculator.png";
+import calculator from "../../assets/calculator.png";
 
 const calcimage = () => {
   return (

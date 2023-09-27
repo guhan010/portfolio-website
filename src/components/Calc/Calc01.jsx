@@ -1,5 +1,5 @@
 import { Box, Divider, Grid, Typography } from "@mui/material";
-import tennycalc from "./../assets/tennycalc.png";
+import tennycalc from "../../assets/tennycalc.png";
 
 const Calc01 = () => {
   return (
@@ -98,6 +98,7 @@ const Calc01 = () => {
           </Box>
         </Grid>
       </Grid>
+      <Divider variant="middle" />
     </div>
   );
 };
