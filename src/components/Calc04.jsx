@@ -1,6 +1,6 @@
 import { Box, Divider, Grid, Typography } from "@mui/material";
 
-const Calc03 = () => {
+const Calc04 = () => {
   return (
     <div style={{ flexGrow: 1, padding: 16 }}>
       <Grid
@@ -25,25 +25,20 @@ const Calc03 = () => {
           <Typography
             variant="h2"
             sx={{ fontSize: "25px", fontWeight: "700", color: "#333333" }}
-            marginY={3}
+            marginY={2.5}
           >
-            Style Evolution
+            Built Schema
           </Typography>
           <Typography sx={{ fontSize: "15px", color: "GrayText" }}>
-            <strong>Simplicity in Design:</strong> My calculator project has
-            been meticulously crafted using React.js and CSS to provide a
-            user-friendly and straightforward experience. I understand that
-            sometimes, less is more, and my design philosophy reflects just
-            that. With a clean and minimalist layout, my simple calculator lets
-            you focus on what truly matters: solving equations with ease.
-            Embracing the beauty of simplicity, I&apos;ve created a calculator
-            that gets the job done efficiently and intuitively.
+            I opted for a hands-on approach by utilizing React hooks to perform
+            calculations manually. Rather than relying on external libraries or
+            built-in browser functions, I&apos;ve harnessed the power of React
+            hooks to handle calculations within this application.
           </Typography>
         </Box>
       </Grid>
-      <Divider variant="middle" sx={{ marginTop: "35px" }} />
     </div>
   );
 };
 
-export default Calc03;
+export default Calc04;

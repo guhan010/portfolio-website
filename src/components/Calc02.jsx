@@ -1,4 +1,4 @@
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Divider, Grid, Typography } from "@mui/material";
 
 const Calc02 = () => {
   return (
@@ -41,6 +41,15 @@ const Calc02 = () => {
           </Typography>
         </Box>
       </Grid>
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <Divider
+          variant="middle"
+          sx={{
+            marginTop: "30px",
+            width: "50%",
+          }}
+        />
+      </div>
     </div>
   );
 };

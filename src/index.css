@@ -125,3 +125,42 @@ body {
     max-height: 60%;
   }
 }
+.responsive-image-container-hook {
+  max-width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+}
+
+.responsive-image-hook {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0px 6px 6px rgba(0, 0, 0, 0.4);
+}
+/* Media query for screens with a maximum width of 768px (tablet-sized screens) */
+@media (max-width: 768px) {
+  .responsive-image-hook {
+    max-width: 40%; /* Adjust the maximum width for tablet-sized screens */
+    max-height: auto;
+  }
+}
+@media (min-width: 1024px) {
+  .responsive-image-hook {
+    max-width: 40%; /* Adjust the maximum width for desktop-sized screens */
+    max-height: auto;
+  }
+}
+/* Media query for screens with a maximum width of 480px (mobile-sized screens) */
+@media (max-width: 480px) {
+  .responsive-image-hook {
+    max-width: 80%;
+    max-height: 80%;
+  }
+}
+
+.spaced-list li::before {
+  content: "";
+  display: block;
+  height: 10px; /* Adjust the height to control the spacing between list items */
+}
