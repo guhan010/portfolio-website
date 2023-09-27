@@ -1,6 +1,6 @@
 import { Box, Grid, Typography } from "@mui/material";
 
-const Calc02 = () => {
+const Calc03 = () => {
   return (
     <div style={{ flexGrow: 1, padding: 16 }}>
       <Grid
@@ -12,7 +12,6 @@ const Calc02 = () => {
         xs={12}
         sm={12}
         md={12}
-        marginTop={3}
       >
         <Box
           style={{
@@ -28,16 +27,17 @@ const Calc02 = () => {
             sx={{ fontSize: "25px", fontWeight: "700", color: "#333333" }}
             marginY={3}
           >
-            Getting started
+            Style Evolution
           </Typography>
           <Typography sx={{ fontSize: "15px", color: "GrayText" }}>
-            In a world where precision and speed matter, our calculator is
-            designed to simplify complex calculations and provide quick,
-            accurate results at your fingertips. Whether you&apos;re a student
-            tackling math problems or a professional in need of a reliable tool,
-            my Tenny Calc is here to empower you. Get ready to experience a
-            sleek, user-friendly interface that combines functionality with
-            elegance, making every calculation an effortless and enjoyable task
+            <strong>Simplicity in Design:</strong> My calculator project has
+            been meticulously crafted using React.js and CSS to provide a
+            user-friendly and straightforward experience. I understand that
+            sometimes, less is more, and my design philosophy reflects just
+            that. With a clean and minimalist layout, my simple calculator lets
+            you focus on what truly matters: solving equations with ease.
+            Embracing the beauty of simplicity, I&apos;ve created a calculator
+            that gets the job done efficiently and intuitively.
           </Typography>
         </Box>
       </Grid>
@@ -45,4 +45,4 @@ const Calc02 = () => {
   );
 };
 
-export default Calc02;
+export default Calc03;
