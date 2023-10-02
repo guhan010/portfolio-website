@@ -12,6 +12,7 @@ const LazyContact = lazy(() => import("./pages/Contact"));
 const LazyResume = lazy(() => import("./pages/Resume"));
 const LazyTennyCalc = lazy(() => import("./pages/portfolio/TennyCalc"));
 const LazyGameBase = lazy(() => import("./pages/portfolio/GameBase"));
+const LazyPortfolioSite = lazy(() => import("./pages/portfolio/PortfolioSite"));
 
 function App() {
   return (
@@ -27,6 +28,10 @@ function App() {
           <Route path="/Contact" element={<LazyContact />} />
           <Route path="/portfolio/tenny-calc" element={<LazyTennyCalc />} />
           <Route path="/portfolio/game-base" element={<LazyGameBase />} />
+          <Route
+            path="/portfolio/portfolio-site"
+            element={<LazyPortfolioSite />}
+          />
         </Routes>
       </Suspense>
       <BottomNav />

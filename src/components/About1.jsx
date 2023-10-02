@@ -48,7 +48,7 @@ function About1() {
             >
               <Typography
                 variant="body1"
-                sx={{ marginY: "8px", fontSize: "15px" }}
+                sx={{ marginY: "8px", color: "GrayText", fontSize: "15px" }}
               >
                 I channel my meticulousness, passion for creation, and tireless
                 commitment towards a purpose-driven work ethic. This fuels my

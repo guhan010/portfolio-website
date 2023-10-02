@@ -53,21 +53,21 @@ function About1() {
             style={{
               padding: 10,
               textAlign: "left",
-              maxWidth: "400px", // Adjust the maximum width as needed
+              maxWidth: "300px", // Adjust the maximum width as needed
               margin: "0 auto", // Center align the content,
             }}
           >
             <Typography
               variant="body1"
-              sx={{ marginY: "8px", fontSize: "14px" }}
+              sx={{ marginTop: "8px", fontSize: "14px" }}
             >
-              I drink a lot of tea <br />
-              I&apos;m into interior design
+              - I drink a lot of tea <br />
+              - I&apos;m in love with Ocean
               <br />
-              Gardening is my zen time <br />I love to cook (and eat) <br />
-              I&apos;m a bit of a clean freak <br />I want to live on Pandora{" "}
+              - Exercising is my zen time <br />- Bit of Tech Addicted
               <br />
-              I&apos;m slightly addicted to Twitter
+              - I&apos;m a bit of a clean freak
+              <br />
             </Typography>
           </Box>
         </Grid>

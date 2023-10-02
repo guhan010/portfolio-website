@@ -1,4 +1,4 @@
-import { Divider, Grid, Typography } from "@mui/material";
+import { Divider, Grid, Tooltip, Typography } from "@mui/material";
 import git from "../assets/git.svg";
 import github from "../assets/github.svg";
 import html from "../assets/html.svg";
@@ -27,8 +27,16 @@ import azure from "../assets/azure.svg";
 import vercel from "../assets/vercel.svg";
 import excel from "../assets/excel.svg";
 import jest from "../assets/jest.svg";
+import "../styles/tooltipStyles.css";
 
 const Skills = () => {
+  const zoomIn = (e) => {
+    e.currentTarget.style.transform = "scale(1.2)";
+  };
+
+  const zoomOut = (e) => {
+    e.currentTarget.style.transform = "scale(1)";
+  };
   return (
     <>
       <div
@@ -48,8 +56,8 @@ const Skills = () => {
               variant="h4"
               sx={{
                 textAlign: "center",
-                fontFamily: "monospace",
-                color: "GrayText",
+                fontFamily: "sans-serif",
+                color: "grey",
                 marginY: "10px",
               }}
             >
@@ -70,9 +78,10 @@ const Skills = () => {
           >
             <Typography
               variant="h5"
-              sx={{ bgcolor: "gray", maxWidth: "300px" }}
+              sx={{ maxWidth: "300px" }}
+              className="skills"
             >
-              Frontend
+              frontend
             </Typography>
             <Typography
               variant="body1"
@@ -86,12 +95,82 @@ const Skills = () => {
               }}
               maxWidth="250px"
             >
-              <img src={html} style={{ width: "54px", height: "54px" }} />
-              <img src={css} style={{ width: "54px", height: "54px" }} />
-              <img src={react} style={{ width: "46px", height: "46px" }} />
-              <img src={bootstrap} style={{ width: "54px", height: "54px" }} />
-              <img src={chakraUI} style={{ width: "54px", height: "54px" }} />
-              <img src={materialUI} style={{ width: "54px", height: "54px" }} />
+              <Tooltip
+                title="HTML"
+                arrow
+                classes={{ tooltip: "custom-tooltip" }}
+              >
+                <img
+                  src={html}
+                  style={{
+                    width: "54px",
+                    height: "54px",
+                    transition: "transform 0.2s",
+                  }}
+                  onMouseOver={zoomIn}
+                  onMouseLeave={zoomOut}
+                />
+              </Tooltip>
+              <Tooltip
+                title="CSS"
+                arrow
+                classes={{ tooltip: "custom-tooltip" }}
+              >
+                <img
+                  src={css}
+                  style={{ width: "54px", height: "54px" }}
+                  onMouseOver={zoomIn}
+                  onMouseLeave={zoomOut}
+                />
+              </Tooltip>
+              <Tooltip
+                title="React"
+                arrow
+                classes={{ tooltip: "custom-tooltip" }}
+              >
+                <img
+                  src={react}
+                  style={{ width: "46px", height: "46px" }}
+                  onMouseOver={zoomIn}
+                  onMouseLeave={zoomOut}
+                />
+              </Tooltip>
+              <Tooltip
+                title="Bootstrap"
+                arrow
+                classes={{ tooltip: "custom-tooltip" }}
+              >
+                <img
+                  src={bootstrap}
+                  style={{ width: "54px", height: "54px" }}
+                  onMouseOver={zoomIn}
+                  onMouseLeave={zoomOut}
+                />
+              </Tooltip>
+              <Tooltip
+                title="Chakra UI"
+                arrow
+                classes={{ tooltip: "custom-tooltip" }}
+              >
+                <img
+                  src={chakraUI}
+                  style={{ width: "54px", height: "54px" }}
+                  onMouseOver={zoomIn}
+                  onMouseLeave={zoomOut}
+                />
+              </Tooltip>
+              <Tooltip
+                title="Material UI"
+                arrow
+                classes={{ tooltip: "custom-tooltip" }}
+              >
+                <img
+                  src={materialUI}
+                  style={{ width: "54px", height: "54px" }}
+                  onMouseOver={zoomIn}
+                  onMouseLeave={zoomOut}
+                />
+              </Tooltip>
             </Typography>
           </Grid>
           <Grid
@@ -108,9 +187,10 @@ const Skills = () => {
           >
             <Typography
               variant="h5"
-              sx={{ bgcolor: "palegreen", maxWidth: "300px" }}
+              sx={{ maxWidth: "300px" }}
+              className="skills"
             >
-              Backend
+              backend
             </Typography>
             <Typography
               variant="body1"
@@ -124,11 +204,66 @@ const Skills = () => {
               }}
               maxWidth="250px"
             >
-              <img src={nodejs} style={{ width: "60px", height: "60px" }} />
-              <img src={mongodb} style={{ width: "60px", height: "60px" }} />
-              <img src={mysql} style={{ width: "60px", height: "60px" }} />
-              <img src={express} style={{ width: "60px", height: "60px" }} />
-              <img src={socketio} style={{ width: "60px", height: "60px" }} />
+              <Tooltip
+                title="Node Js"
+                arrow
+                classes={{ tooltip: "custom-tooltip" }}
+              >
+                <img
+                  src={nodejs}
+                  style={{ width: "60px", height: "60px" }}
+                  onMouseOver={zoomIn}
+                  onMouseLeave={zoomOut}
+                />
+              </Tooltip>
+              <Tooltip
+                title="Mongo DB"
+                arrow
+                classes={{ tooltip: "custom-tooltip" }}
+              >
+                <img
+                  src={mongodb}
+                  style={{ width: "60px", height: "60px" }}
+                  onMouseOver={zoomIn}
+                  onMouseLeave={zoomOut}
+                />
+              </Tooltip>
+              <Tooltip
+                title="MySql"
+                arrow
+                classes={{ tooltip: "custom-tooltip" }}
+              >
+                <img
+                  src={mysql}
+                  style={{ width: "60px", height: "60px" }}
+                  onMouseOver={zoomIn}
+                  onMouseLeave={zoomOut}
+                />
+              </Tooltip>
+              <Tooltip
+                title="Express Js"
+                arrow
+                classes={{ tooltip: "custom-tooltip" }}
+              >
+                <img
+                  src={express}
+                  style={{ width: "60px", height: "60px" }}
+                  onMouseOver={zoomIn}
+                  onMouseLeave={zoomOut}
+                />
+              </Tooltip>
+              <Tooltip
+                title="Socket.IO"
+                arrow
+                classes={{ tooltip: "custom-tooltip" }}
+              >
+                <img
+                  src={socketio}
+                  style={{ width: "60px", height: "60px" }}
+                  onMouseOver={zoomIn}
+                  onMouseLeave={zoomOut}
+                />
+              </Tooltip>
             </Typography>
           </Grid>
           <Grid
@@ -145,9 +280,10 @@ const Skills = () => {
           >
             <Typography
               variant="h5"
-              sx={{ bgcolor: "gray", maxWidth: "300px" }}
+              sx={{ maxWidth: "300px" }}
+              className="skills"
             >
-              Devops
+              devops
             </Typography>
             <Typography
               variant="body1"
@@ -161,9 +297,42 @@ const Skills = () => {
               }}
               maxWidth="250px"
             >
-              <img src={git} style={{ width: "48px", height: "48px" }} />
-              <img src={github} style={{ width: "48px", height: "48px" }} />
-              <img src={npm} style={{ width: "60px", height: "60px" }} />
+              <Tooltip
+                title="Git"
+                arrow
+                classes={{ tooltip: "custom-tooltip" }}
+              >
+                <img
+                  src={git}
+                  style={{ width: "48px", height: "48px" }}
+                  onMouseOver={zoomIn}
+                  onMouseLeave={zoomOut}
+                />
+              </Tooltip>
+              <Tooltip
+                title="Github"
+                arrow
+                classes={{ tooltip: "custom-tooltip" }}
+              >
+                <img
+                  src={github}
+                  style={{ width: "50px", height: "50px" }}
+                  onMouseOver={zoomIn}
+                  onMouseLeave={zoomOut}
+                />
+              </Tooltip>
+              <Tooltip
+                title="Node Package Manager"
+                arrow
+                classes={{ tooltip: "custom-tooltip" }}
+              >
+                <img
+                  src={npm}
+                  style={{ width: "60px", height: "60px" }}
+                  onMouseOver={zoomIn}
+                  onMouseLeave={zoomOut}
+                />
+              </Tooltip>
             </Typography>
           </Grid>
           <Grid
@@ -180,9 +349,10 @@ const Skills = () => {
           >
             <Typography
               variant="h5"
-              sx={{ bgcolor: "gray", maxWidth: "300px" }}
+              sx={{ maxWidth: "300px" }}
+              className="skills"
             >
-              Languages
+              languages
             </Typography>
             <Typography
               variant="body1"
@@ -196,10 +366,54 @@ const Skills = () => {
               }}
               maxWidth="250px"
             >
-              <img src={javascript} style={{ width: "54px", height: "54px" }} />
-              <img src={typescript} style={{ width: "40px", height: "40px" }} />
-              <img src={python} style={{ width: "50px", height: "50px" }} />
-              <img src={c} style={{ width: "50px", height: "50px" }} />
+              <Tooltip
+                title="JavaScript"
+                arrow
+                classes={{ tooltip: "custom-tooltip" }}
+              >
+                <img
+                  src={javascript}
+                  style={{ width: "54px", height: "54px" }}
+                  onMouseOver={zoomIn}
+                  onMouseLeave={zoomOut}
+                />
+              </Tooltip>
+              <Tooltip
+                title="TypeScript"
+                arrow
+                classes={{ tooltip: "custom-tooltip" }}
+              >
+                <img
+                  src={typescript}
+                  style={{ width: "40px", height: "40px" }}
+                  onMouseOver={zoomIn}
+                  onMouseLeave={zoomOut}
+                />
+              </Tooltip>
+              <Tooltip
+                title="Python"
+                arrow
+                classes={{ tooltip: "custom-tooltip" }}
+              >
+                <img
+                  src={python}
+                  style={{ width: "50px", height: "50px" }}
+                  onMouseOver={zoomIn}
+                  onMouseLeave={zoomOut}
+                />
+              </Tooltip>
+              <Tooltip
+                title="C Programming"
+                arrow
+                classes={{ tooltip: "custom-tooltip" }}
+              >
+                <img
+                  src={c}
+                  style={{ width: "50px", height: "50px" }}
+                  onMouseOver={zoomIn}
+                  onMouseLeave={zoomOut}
+                />
+              </Tooltip>
             </Typography>
           </Grid>
           <Grid
@@ -216,9 +430,10 @@ const Skills = () => {
           >
             <Typography
               variant="h5"
-              sx={{ bgcolor: "palegreen", maxWidth: "300px" }}
+              sx={{ maxWidth: "300px" }}
+              className="skills"
             >
-              Tools and Platforms
+              tools and platforms
             </Typography>
             <Typography
               variant="body1"
@@ -232,12 +447,78 @@ const Skills = () => {
                 maxWidth: "250px",
               }}
             >
-              <img src={heroku} style={{ width: "50px", height: "50px" }} />
-              <img src={azure} style={{ width: "50px", height: "50px" }} />
-              <img src={vercel} style={{ width: "55px", height: "55px" }} />
-              <img src={vscode} style={{ width: "50px", height: "50px" }} />
-              <img src={webpack} style={{ width: "55px", height: "55px" }} />
-              <img src={excel} style={{ width: "50px", height: "50px" }} />
+              <Tooltip
+                title="Heroku"
+                arrow
+                classes={{ tooltip: "custom-tooltip" }}
+              >
+                <img
+                  src={heroku}
+                  style={{ width: "50px", height: "50px" }}
+                  onMouseOver={zoomIn}
+                  onMouseLeave={zoomOut}
+                />
+              </Tooltip>
+              <Tooltip
+                title="Microsoft Azure"
+                arrow
+                classes={{ tooltip: "custom-tooltip" }}
+              >
+                <img
+                  src={azure}
+                  style={{ width: "50px", height: "50px" }}
+                  onMouseOver={zoomIn}
+                  onMouseLeave={zoomOut}
+                />
+              </Tooltip>
+              <Tooltip
+                title="Vercel"
+                arrow
+                classes={{ tooltip: "custom-tooltip" }}
+              >
+                <img
+                  src={vercel}
+                  style={{ width: "55px", height: "55px" }}
+                  onMouseOver={zoomIn}
+                  onMouseLeave={zoomOut}
+                />
+              </Tooltip>
+              <Tooltip
+                title="VS Code"
+                arrow
+                classes={{ tooltip: "custom-tooltip" }}
+              >
+                <img
+                  src={vscode}
+                  style={{ width: "50px", height: "50px" }}
+                  onMouseOver={zoomIn}
+                  onMouseLeave={zoomOut}
+                />
+              </Tooltip>
+              <Tooltip
+                title="Webpack"
+                arrow
+                classes={{ tooltip: "custom-tooltip" }}
+              >
+                <img
+                  src={webpack}
+                  style={{ width: "50px", height: "50px" }}
+                  onMouseOver={zoomIn}
+                  onMouseLeave={zoomOut}
+                />
+              </Tooltip>
+              <Tooltip
+                title="Microsoft Excel"
+                arrow
+                classes={{ tooltip: "custom-tooltip" }}
+              >
+                <img
+                  src={excel}
+                  style={{ width: "50px", height: "50px" }}
+                  onMouseOver={zoomIn}
+                  onMouseLeave={zoomOut}
+                />
+              </Tooltip>
             </Typography>
           </Grid>
           <Grid
@@ -254,9 +535,10 @@ const Skills = () => {
           >
             <Typography
               variant="h5"
-              sx={{ bgcolor: "palegreen", maxWidth: "300px" }}
+              sx={{ maxWidth: "300px" }}
+              className="skills"
             >
-              API Testing and Security
+              API testing and security
             </Typography>
             <Typography
               variant="body1"
@@ -270,10 +552,54 @@ const Skills = () => {
                 maxWidth: "250px",
               }}
             >
-              <img src={postman} style={{ width: "50px", height: "50px" }} />
-              <img src={jest} style={{ width: "50px", height: "50px" }} />
-              <img src={oauth} style={{ width: "50px", height: "50px" }} />
-              <img src={passportjs} style={{ width: "50px", height: "50px" }} />
+              <Tooltip
+                title="Postman API"
+                arrow
+                classes={{ tooltip: "custom-tooltip" }}
+              >
+                <img
+                  src={postman}
+                  style={{ width: "50px", height: "50px" }}
+                  onMouseOver={zoomIn}
+                  onMouseLeave={zoomOut}
+                />
+              </Tooltip>
+              <Tooltip
+                title="Jest"
+                arrow
+                classes={{ tooltip: "custom-tooltip" }}
+              >
+                <img
+                  src={jest}
+                  style={{ width: "50px", height: "50px" }}
+                  onMouseOver={zoomIn}
+                  onMouseLeave={zoomOut}
+                />
+              </Tooltip>
+              <Tooltip
+                title="OAuth"
+                arrow
+                classes={{ tooltip: "custom-tooltip" }}
+              >
+                <img
+                  src={oauth}
+                  style={{ width: "50px", height: "50px" }}
+                  onMouseOver={zoomIn}
+                  onMouseLeave={zoomOut}
+                />
+              </Tooltip>
+              <Tooltip
+                title="Passport JS"
+                arrow
+                classes={{ tooltip: "custom-tooltip" }}
+              >
+                <img
+                  src={passportjs}
+                  style={{ width: "50px", height: "50px" }}
+                  onMouseOver={zoomIn}
+                  onMouseLeave={zoomOut}
+                />
+              </Tooltip>
             </Typography>
           </Grid>
         </Grid>
@@ -282,5 +608,4 @@ const Skills = () => {
     </>
   );
 };
-
 export default Skills;

@@ -4,28 +4,31 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import tennycalc from "../../assets/tennycalc.png";
+import { Link } from "react-router-dom";
 
 const CalcCard = () => {
   return (
-    <Card sx={{ maxWidth: 345 }}>
-      <CardActionArea>
-        <CardMedia
-          component="img"
-          height="140"
-          src={tennycalc}
-          alt="calc logo"
-          sx={{ width: "100%", height: "100%" }}
-        />
-        <CardContent>
-          <Typography gutterBottom variant="h5" component="div">
-            Tenny - Calc
-          </Typography>
-          <Typography variant="body2" color="text.secondary">
-            An Online Calculator
-          </Typography>
-        </CardContent>
-      </CardActionArea>
-    </Card>
+    <Link to="/portfolio/tenny-calc" style={{ textDecoration: "none" }}>
+      <Card sx={{ maxWidth: 345 }}>
+        <CardActionArea>
+          <CardMedia
+            component="img"
+            height="140"
+            src={tennycalc}
+            alt="calc logo"
+            sx={{ width: "100%", height: "auto" }}
+          />
+          <CardContent>
+            <Typography gutterBottom variant="h5" component="div">
+              Tenny - Calc
+            </Typography>
+            <Typography variant="body2" color="text.secondary">
+              An Online Calculator
+            </Typography>
+          </CardContent>
+        </CardActionArea>
+      </Card>
+    </Link>
   );
 };
 

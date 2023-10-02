@@ -1,31 +1,32 @@
-import { Box, Divider, Typography } from "@mui/material";
+import { Box, Divider, Fade, Grid, Typography } from "@mui/material";
 import name from "../assets/name.webp";
+import { useEffect, useState } from "react";
+import PortfolioGrid from "../components/PortfolioGrid";
 
 const Home = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    setIsVisible(true);
+  }, []);
+
   return (
-    <div className="home">
-      <img
-        src={name}
-        alt="Hi! I'm Guhan Eswaran. I'm a Full Stack Developer"
-        style={{ width: "1080px", height: "auto" }}
-      />
-      <Box sx={{ justifyContent: "center", alignItems: "center" }}>
-        <Divider
-          component="div"
-          role="presentation"
-          sx={{ margin: "70px 0 35px 0" }}
+    <div style={{ flexGrow: 1, padding: 16 }} className="home">
+      <Grid container spacing={2}>
+        <Grid
+          item
+          xs={12}
+          sm={12}
+          md={12}
+          style={{ opacity: isVisible ? 1 : 0, transition: "opacity 4s" }}
         >
-          <Typography
-            variant="h3"
-            sx={{
-              color: "#757575",
-              fontSize: "14px",
-            }}
-          >
-            <pre> &nbsp; some of my latest works &nbsp; </pre>
-          </Typography>
-        </Divider>
-      </Box>
+          <img
+            src={name}
+            alt="Hi! I'm Guhan Eswaran. I'm a Full Stack Developer"
+            style={{ width: "100%", height: "auto" }}
+          />
+        </Grid>
+      </Grid>
     </div>
   );
 };

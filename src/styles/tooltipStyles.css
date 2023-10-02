@@ -1,0 +1,9 @@
+/* tooltipStyles.css */
+.custom-tooltip {
+  background-color: azure; /* Customize the background color */
+  color: darkslategrey; /* Customize the text color */
+  font-size: 13px; /* Customize the font size */
+  font-weight: 800;
+  border-radius: 5px; /* Customize the border radius */
+  padding: 10px; /* Add padding */
+}
