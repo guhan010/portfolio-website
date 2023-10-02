@@ -8,7 +8,7 @@ import Resume from "./pages/Resume";
 import BottomNav from "./components/BottomNav";
 import TennyCalc from "./pages/portfolio/TennyCalc";
 import NavBar from "./components/Navbar";
-
+import GameBase from "./pages/portfolio/GameBase";
 function App() {
   return (
     <>
@@ -21,6 +21,7 @@ function App() {
         <Route path="/resume" element={<Resume />}></Route>
         <Route path="/Contact" element={<Contact />}></Route>
         <Route path="/portfolio/tenny-calc" element={<TennyCalc />}></Route>
+        <Route path="/portfolio/game-base" element={<GameBase />}></Route>
       </Routes>
       <BottomNav />
     </>

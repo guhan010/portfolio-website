@@ -10,8 +10,14 @@ import Calcimg03 from "../../components/Calc/Calcimg03";
 import Calc06 from "../../components/Calc/Calc06";
 import Calcimg04 from "../../components/Calc/Calcimg04";
 import { Divider } from "@mui/material";
+import { useEffect } from "react";
 
 const TennyCalc = () => {
+  useEffect(() => {
+    // Scroll to the top of the page when the component mounts
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <>
       <Calc01 />
