@@ -59,7 +59,7 @@ const NavBar = () => {
   return (
     <>
       <Box>
-        <Transition in={true} timeout={500} appear={true}>
+        <Transition in={true} timeout={400} appear={true}>
           {(state) => (
             <AppBar
               component={"nav"}
