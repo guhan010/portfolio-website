@@ -1,0 +1,22 @@
+@font-face {
+  font-family: Proxima-Bold;
+  src: url(../fonts/Proxima-Nova-Bold.woff);
+}
+@font-face {
+  font-family: Proxima-Light;
+  src: url(../fonts/Proxima-Nova-Alt-Light.woff);
+}
+@font-face {
+  font-family: Proxima-Regular;
+  src: url(../fonts/ProximaNova-Regular.woff);
+}
+.page-title {
+  font-family: Proxima-Bold;
+}
+.title-02 {
+  font-family: Proxima-Light;
+}
+.title-03 {
+  font-family: Proxima-Light;
+  font-size: 18px;
+}
