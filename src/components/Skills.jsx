@@ -54,10 +54,12 @@ const Skills = () => {
           <Grid item xs={12} sm={12} md={12}>
             <Typography
               variant="h4"
+              className="regular-font"
               sx={{
                 textAlign: "center",
                 fontFamily: "sans-serif",
-                color: "grey",
+                color: "#333333",
+                fontWeight: 600,
                 marginY: "10px",
               }}
             >
