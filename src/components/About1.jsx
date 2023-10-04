@@ -15,8 +15,8 @@ function About1() {
                 backgroundColor: "whitesmoke",
                 textAlign: "left",
                 maxWidth: "400px", // Adjust the maximum width as needed
-                marginY: "-20px",
               }}
+              marginTop="-20px"
             >
               <Typography
                 variant="h1"
