@@ -6,11 +6,11 @@ import {
   Slide,
   Typography,
 } from "@mui/material";
-import about from "../assets/about.webp";
 import twitter from "../assets/twitter.png";
 import linkedin from "../assets/linkedin.png";
 import instagram from "../assets/instagram.png";
 import github from "../assets/github.svg";
+import contact1 from "../assets/contact1.jpg";
 
 const Contact1 = () => {
   return (
@@ -24,13 +24,13 @@ const Contact1 = () => {
                 backgroundColor: "whitesmoke",
                 textAlign: "left",
                 maxWidth: "400px", // Adjust the maximum width as needed
-                margin: "0 auto", // Center align the content
               }}
+              marginTop="-20px"
             >
               <Typography
                 variant="h1"
-                className="MuiTypography--h1 MuiTypography-responsiveFontSm"
-                sx={{ fontSize: "80px", fontWeight: "700", color: "#333333" }}
+                className="page-title"
+                sx={{ fontSize: "100px", fontWeight: "700", color: "#333333" }}
               >
                 contact..
               </Typography>
@@ -41,12 +41,15 @@ const Contact1 = () => {
                 backgroundColor: "whitesmoke",
                 textAlign: "left",
                 maxWidth: "400px", // Adjust the maximum width as needed
-                margin: "0 auto", // Center align the content
               }}
+              marginTop="-15px"
             >
-              <Typography variant="body1" sx={{ fontSize: "15px" }}>
-                Get in touch with me via social media
-                <br /> or email.
+              <Typography
+                variant="body1"
+                className="title-02"
+                sx={{ fontSize: "25px" }}
+              >
+                Get in touch with me via social media or email.
               </Typography>
             </Box>
             <Box
@@ -175,9 +178,9 @@ const Contact1 = () => {
           <Grid item xs={12} sm={6} md={4}>
             <Box style={{ padding: 16, textAlign: "center" }}>
               <img
-                src={about}
+                src={contact1}
                 alt="Profile Picture"
-                style={{ width: "100%", height: "auto", borderRadius: "8px" }}
+                style={{ width: "95%", height: "auto", borderRadius: "8px" }}
               />
             </Box>
           </Grid>
