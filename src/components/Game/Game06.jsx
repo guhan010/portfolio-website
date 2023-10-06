@@ -1,4 +1,4 @@
-import { Box, Divider, Grid, Typography } from "@mui/material";
+import { Box, Grid, Typography } from "@mui/material";
 import darkmode from "../../assets/darkmode.png";
 
 const Game06 = () => {
@@ -39,7 +39,7 @@ const Game06 = () => {
               src={darkmode}
               alt="Profile Picture"
               style={{
-                width: "100%",
+                width: "80%",
                 height: "auto",
                 borderRadius: "10px",
               }}

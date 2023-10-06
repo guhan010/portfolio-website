@@ -7,6 +7,9 @@ import Game04 from "../../components/Game/Game04";
 import Game05 from "../../components/Game/Game05";
 import Game06 from "../../components/Game/Game06";
 import GameImage02 from "../../components/Game/GameImage02";
+import Game07 from "../../components/Game/Game07";
+import GameImage03 from "../../components/Game/GameImage03";
+import GameImage04 from "../../components/Game/GameImage04";
 
 const GameBase = () => {
   useEffect(() => {
@@ -23,6 +26,9 @@ const GameBase = () => {
       <Game05 />
       <Game06 />
       <GameImage02 />
+      <Game07 />
+      <GameImage03 />
+      <GameImage04 />
     </>
   );
 };
