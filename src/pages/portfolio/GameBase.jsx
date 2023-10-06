@@ -10,6 +10,9 @@ import GameImage02 from "../../components/Game/GameImage02";
 import Game07 from "../../components/Game/Game07";
 import GameImage03 from "../../components/Game/GameImage03";
 import GameImage04 from "../../components/Game/GameImage04";
+import Game08 from "../../components/Game/Game08";
+import GameImage05 from "../../components/Game/GameImage05";
+import { Divider } from "@mui/material";
 
 const GameBase = () => {
   useEffect(() => {
@@ -29,6 +32,9 @@ const GameBase = () => {
       <Game07 />
       <GameImage03 />
       <GameImage04 />
+      <Game08 />
+      <GameImage05 />
+      <Divider variant="middle" />
     </>
   );
 };
