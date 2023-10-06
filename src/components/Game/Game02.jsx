@@ -38,10 +38,10 @@ const Game02 = () => {
             sx={{ fontSize: "15px", color: "#757575" }}
           >
             <strong>Game Base</strong> is your one-stop resource for gaming
-            information and community engagement. Whether you're a seasoned pro,
-            a budding gamer, or a developer seeking insights, we're here to make
-            your gaming journey more enjoyable and informative. Dive into Game
-            Base and level up your gaming experience today!
+            information and community engagement. Whether you&apos;re a seasoned
+            pro, a budding gamer, or a developer seeking insights, we&apos;re
+            here to make your gaming journey more enjoyable and informative.
+            Dive into Game Base and level up your gaming experience today!
           </Typography>
         </Box>
       </Grid>
