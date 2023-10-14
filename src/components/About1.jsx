@@ -1,5 +1,5 @@
 import { Box, Divider, Grid, Slide, Typography } from "@mui/material";
-import about from "../assets/about.webp";
+import about from "../assets/about.png";
 import "../styles/FontStyles.css";
 
 function About1() {

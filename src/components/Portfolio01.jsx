@@ -1,11 +1,11 @@
 import { Box, Divider, Grid, Slide, Typography } from "@mui/material";
-import portfolio2 from "../assets/portfolio2.jpg";
+import portfolio from "../assets/portfolio.png";
 import "../styles/FontStyles.css";
 
 function About1() {
   return (
     <div style={{ flexGrow: 1, padding: 16 }}>
-      <Grid container spacing={2} justifyContent="space-around" marginY="40px">
+      <Grid container spacing={2} justifyContent="space-evenly" marginY="40px">
         <Slide in={true} direction="right" timeout={700}>
           <Grid item xs={12} sm={6} md={6}>
             <Box
@@ -66,7 +66,7 @@ function About1() {
           <Grid item xs={12} sm={6} md={4}>
             <Box>
               <img
-                src={portfolio2}
+                src={portfolio}
                 alt="Profile Picture"
                 style={{ width: "100%", borderRadius: "8px" }}
               />

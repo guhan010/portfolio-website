@@ -1,16 +1,16 @@
 import { Box, Divider, Grid, Typography } from "@mui/material";
-import hobbies from "../assets/hobbies.jpg";
+import hobbies from "../assets/hobbies.png";
 
 function Hobbies() {
   return (
     <div style={{ flexGrow: 1, padding: 16 }}>
-      <Grid container spacing={2} justifyContent="space-evenly" marginY="50px">
+      <Grid container spacing={2} justifyContent="space-evenly" marginY="40px">
         <Grid item xs={12} sm={6} md={4}>
           <Box style={{ padding: 16, textAlign: "center" }}>
             <img
               src={hobbies}
               alt="Profile Picture"
-              style={{ width: "120%", height: "auto", borderRadius: "8px" }}
+              style={{ width: "120%", height: "auto", borderRadius: "18px" }}
             />
           </Box>
         </Grid>
@@ -21,8 +21,9 @@ function Hobbies() {
               backgroundColor: "whitesmoke",
               textAlign: "center",
               maxWidth: "400px", // Adjust the maximum width as needed
-              margin: "0 100px", // Center align the content
             }}
+            marginTop={3}
+            marginLeft="100px"
           >
             <Typography
               variant="h4"
