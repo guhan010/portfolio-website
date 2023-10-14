@@ -10,7 +10,7 @@ function About1() {
           <Grid item xs={12} sm={6} md={6}>
             <Box
               style={{
-                padding: "10px",
+                padding: 10,
                 backgroundColor: "whitesmoke",
                 textAlign: "left",
                 maxWidth: "400px", // Adjust the maximum width as needed

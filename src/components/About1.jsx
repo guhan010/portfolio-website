@@ -5,13 +5,12 @@ import "../styles/FontStyles.css";
 function About1() {
   return (
     <div style={{ flexGrow: 1, padding: 16 }}>
-      <Grid container spacing={2} justifyContent="space-around" marginY="40px">
-        {/* Single Grid Container for Grid 1 and Grid 2 */}
+      <Grid container spacing={2} justifyContent="space-evenly" marginY="40px">
         <Slide in={true} direction="right" timeout={700}>
           <Grid item xs={12} sm={6} md={6}>
             <Box
               style={{
-                padding: "10px",
+                padding: 10,
                 backgroundColor: "whitesmoke",
                 textAlign: "left",
                 maxWidth: "400px", // Adjust the maximum width as needed
