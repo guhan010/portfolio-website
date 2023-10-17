@@ -1,8 +1,7 @@
 import { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import BottomNav from "./components/BottomNav";
-import NavBar from "./components/Navbar";
-
+import Navbar from "../src/components/Navbar";
 // Lazy-loaded route components
 const LazyHome = lazy(() => import("./pages/Home"));
 const LazyAbout = lazy(() => import("./pages/About"));
@@ -18,7 +17,7 @@ function App() {
   return (
     <>
       <Suspense fallback={<div>Loading...</div>}>
-        <NavBar />
+        <Navbar />
         <Routes>
           <Route path="/" element={<LazyHome />} />
           <Route path="/about" element={<LazyAbout />} />
