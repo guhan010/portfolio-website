@@ -24,7 +24,7 @@ import chakraUI from "../assets/chakraUI.svg";
 import materialUI from "../assets/materialUI.svg";
 import heroku from "../assets/heroku.svg";
 import azure from "../assets/azure.svg";
-import vercel from "../assets/vercel.svg";
+import Vercel from "../assets/Vercel.svg";
 import excel from "../assets/excel.svg";
 import jest from "../assets/jest.svg";
 import "../styles/tooltipStyles.css";
@@ -479,7 +479,7 @@ const Skills = () => {
                 classes={{ tooltip: "custom-tooltip" }}
               >
                 <img
-                  src={vercel}
+                  src={Vercel}
                   style={{ width: "55px", height: "55px" }}
                   onMouseOver={zoomIn}
                   onMouseLeave={zoomOut}
