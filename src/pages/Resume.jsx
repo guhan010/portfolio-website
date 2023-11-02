@@ -1,8 +1,5 @@
-
 const Resume = () => {
-  return (
-    <h1>Resume</h1>
-  )
-}
+  return <div>Resume</div>;
+};
 
-export default Resume
+export default Resume;

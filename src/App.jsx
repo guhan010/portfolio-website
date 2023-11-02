@@ -2,13 +2,13 @@ import { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import BottomNav from "./components/BottomNav";
 import Navbar from "../src/components/Navbar";
+import PDFViewer from "./components/PDFViewer";
 // Lazy-loaded route components
 const LazyHome = lazy(() => import("./pages/Home"));
 const LazyAbout = lazy(() => import("./pages/About"));
 const LazyPortfolio = lazy(() => import("./pages/Portfolio"));
 const LazyBlog = lazy(() => import("./pages/Blog"));
 const LazyContact = lazy(() => import("./pages/Contact"));
-const LazyResume = lazy(() => import("./pages/Resume"));
 const LazyTennyCalc = lazy(() => import("./pages/portfolio/TennyCalc"));
 const LazyGameBase = lazy(() => import("./pages/portfolio/GameBase"));
 const LazyPortfolioSite = lazy(() => import("./pages/portfolio/PortfolioSite"));
@@ -23,7 +23,7 @@ function App() {
           <Route path="/about" element={<LazyAbout />} />
           <Route path="/portfolio" element={<LazyPortfolio />} />
           <Route path="/blog" element={<LazyBlog />} />
-          <Route path="/resume" element={<LazyResume />} />
+          <Route path="/resume" Component={PDFViewer} />
           <Route path="/Contact" element={<LazyContact />} />
           <Route path="/portfolio/tenny-calc" element={<LazyTennyCalc />} />
           <Route path="/portfolio/game-base" element={<LazyGameBase />} />
