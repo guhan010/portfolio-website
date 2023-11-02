@@ -1,15 +1,11 @@
-import { Document, Page } from "react-pdf";
+import resume from "../pdfs/resume.pdf";
 
 function PDFViewer() {
-  const pdfURL = "public/pdfs/resume.pdf";
   // Replace this with your PDF URL
 
   return (
     <div>
-      <h1>Resume</h1>
-      <Document file={pdfURL}>
-        <Page pageNumber={1} />
-      </Document>
+      <iframe src={resume} style={{ width: "100%", height: "100vh" }}></iframe>
     </div>
   );
 }
