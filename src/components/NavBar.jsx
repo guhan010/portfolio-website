@@ -14,7 +14,7 @@ import { NavLink } from "react-router-dom";
 import "../styles/NavStyles.css";
 import { Transition } from "react-transition-group";
 
-const NavBar = () => {
+const Navbar = () => {
   const [mobileOpen, setMobileOpen] = useState(false);
 
   // Handle menu click
@@ -146,4 +146,4 @@ const NavBar = () => {
   );
 };
 
-export default NavBar;
+export default Navbar;
