@@ -1,7 +1,7 @@
 import { lazy, Suspense } from "react";
 import { Route, Routes } from "react-router-dom";
 import BottomNav from "./components/BottomNav";
-import Navbar from "../src/components/Navbar";
+import Navbar from "./components/Navbar";
 import PDFViewer from "./components/PDFViewer";
 // Lazy-loaded route components
 const LazyHome = lazy(() => import("./pages/Home"));
