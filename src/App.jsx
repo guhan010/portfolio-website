@@ -7,7 +7,7 @@ import NaviBar from "./components/NaviBar";
 const LazyHome = lazy(() => import("./pages/Home"));
 const LazyAbout = lazy(() => import("./pages/About"));
 const LazyPortfolio = lazy(() => import("./pages/Portfolio"));
-const LazyBlog = lazy(() => import("./pages/Blog"));
+const LazyTimeLinePage = lazy(() => import("./pages/TimeLinePage"));
 const LazyContact = lazy(() => import("./pages/Contact"));
 const LazyTennyCalc = lazy(() => import("./pages/portfolio/TennyCalc"));
 const LazyGameBase = lazy(() => import("./pages/portfolio/GameBase"));
@@ -22,7 +22,7 @@ function App() {
           <Route path="/" element={<LazyHome />} />
           <Route path="/about" element={<LazyAbout />} />
           <Route path="/portfolio" element={<LazyPortfolio />} />
-          <Route path="/blog" element={<LazyBlog />} />
+          <Route path="/timeline" element={<LazyTimeLinePage />} />
           <Route path="/resume" Component={PDFViewer} />
           <Route path="/Contact" element={<LazyContact />} />
           <Route path="/portfolio/tenny-calc" element={<LazyTennyCalc />} />

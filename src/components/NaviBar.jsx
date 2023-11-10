@@ -41,7 +41,7 @@ const NaviBar = () => {
           <NavLink to={"/portfolio"}>portfolio</NavLink>
         </li>
         <li>
-          <NavLink to={"/blog"}>blog</NavLink>
+          <NavLink to={"/timeline"}>timeline</NavLink>
         </li>
         <li>
           <NavLink to={"/resume"}>resume</NavLink>
@@ -104,7 +104,7 @@ const NaviBar = () => {
                       <NavLink to={"/portfolio"}>portfolio</NavLink>
                     </li>
                     <li>
-                      <NavLink to={"/blog"}>blog</NavLink>
+                      <NavLink to={"/timeline"}>timeline</NavLink>
                     </li>
                     <li>
                       <NavLink to={"/resume"}>resume</NavLink>
