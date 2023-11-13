@@ -10,8 +10,7 @@ import twitter from "../assets/twitter.png";
 import linkedin from "../assets/linkedin.png";
 import instagram from "../assets/instagram.png";
 import github from "../assets/github.svg";
-import contact1 from "../assets/contact1.jpg";
-
+import contact from "../assets/contact.svg";
 const Contact1 = () => {
   return (
     <div style={{ flexGrow: 1, padding: 16 }}>
@@ -178,7 +177,7 @@ const Contact1 = () => {
           <Grid item xs={12} sm={6} md={4}>
             <Box style={{ padding: 16, textAlign: "center" }}>
               <img
-                src={contact1}
+                src={contact}
                 alt="Profile Picture"
                 style={{ width: "95%", height: "auto", borderRadius: "8px" }}
               />

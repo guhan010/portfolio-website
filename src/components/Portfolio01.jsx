@@ -30,7 +30,7 @@ function About1() {
                 padding: 10,
                 backgroundColor: "whitesmoke",
                 textAlign: "left",
-                maxWidth: "400px", // Adjust the maximum width as needed
+                maxWidth: "500px", // Adjust the maximum width as needed
               }}
             >
               <Typography
