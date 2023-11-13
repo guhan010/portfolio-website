@@ -61,7 +61,7 @@ const NaviBar = () => {
             <AppBar
               component={"nav"}
               sx={{
-                bgcolor: "black",
+                bgcolor: "#262626",
                 transform: `translateY(${state === "entered" ? 0 : "-100%"})`,
                 transition: "transform 0.5s",
               }}
