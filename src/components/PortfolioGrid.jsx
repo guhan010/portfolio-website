@@ -6,8 +6,8 @@ import RoisterCard from "./Cards/RoisterCard";
 
 const PortfolioGrid = () => {
   return (
-    <div style={{ flexGrow: 1, margin: "70px 150px" }}>
-      <Grid container spacing={10} justifyContent="center">
+    <div style={{ flexGrow: 1 }}>
+      <Grid container spacing={8} justifyContent="center" padding={10}>
         <Grid item xs={12} sm={12} md={4}>
           <RoisterCard />
         </Grid>
