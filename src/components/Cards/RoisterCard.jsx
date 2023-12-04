@@ -4,19 +4,19 @@ import CardMedia from "@mui/material/CardMedia";
 import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import { Link } from "react-router-dom";
-import Portfoliologo from "../../assets/Portfoliologo.png";
+import roisterlogo from "../../assets/roisterlogo.jpg";
 
 const RoisterCard = () => {
   return (
     <Link to="/portfolio/roister-media" style={{ textDecoration: "none" }}>
-      <Card sx={{ maxWidth: 345 }}>
+      <Card sx={{ maxWidth: 345, borderRadius: "8px" }}>
         <CardActionArea>
           <CardMedia
             component="img"
             height="140"
-            src={Portfoliologo}
+            src={roisterlogo}
             alt="Portfolio Website"
-            sx={{ width: "100%", height: "100%" }}
+            sx={{ width: "100%", height: "100%", borderRadius: "8px" }}
           />
           <CardContent>
             <Typography gutterBottom variant="h5" component="div">
