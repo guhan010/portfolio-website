@@ -12,6 +12,7 @@ const LazyContact = lazy(() => import("./pages/Contact"));
 const LazyTennyCalc = lazy(() => import("./pages/portfolio/TennyCalc"));
 const LazyGameBase = lazy(() => import("./pages/portfolio/GameBase"));
 const LazyPortfolioSite = lazy(() => import("./pages/portfolio/PortfolioSite"));
+const LazyRoisterMedia = lazy(() => import("./pages/portfolio/RoisterMedia"));
 
 function App() {
   return (
@@ -30,6 +31,10 @@ function App() {
           <Route
             path="/portfolio/portfolio-site"
             element={<LazyPortfolioSite />}
+          />
+          <Route
+            path="/portfolio/roister-media"
+            element={<LazyRoisterMedia />}
           />
         </Routes>
       </Suspense>
