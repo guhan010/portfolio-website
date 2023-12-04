@@ -31,7 +31,7 @@ const Contact1 = () => {
                 className="page-title"
                 sx={{ fontSize: "100px", fontWeight: "700", color: "#333333" }}
               >
-                contact..
+                contact
               </Typography>
             </Box>
             <Box

@@ -5,7 +5,7 @@ import "../styles/FontStyles.css";
 function About1() {
   return (
     <div style={{ flexGrow: 1, padding: 16 }}>
-      <Grid container spacing={2} justifyContent="space-evenly" marginY="40px">
+      <Grid container spacing={2} justifyContent="center" marginY="40px">
         <Slide in={true} direction="right" timeout={700}>
           <Grid item xs={12} sm={6} md={6}>
             <Box
@@ -22,7 +22,7 @@ function About1() {
                 className="page-title"
                 sx={{ fontSize: "100px", fontWeight: "700", color: "#333333" }}
               >
-                about..
+                about
               </Typography>
             </Box>
             <Box
@@ -46,7 +46,7 @@ function About1() {
               style={{
                 padding: 10,
                 textAlign: "left",
-                maxWidth: "450px", // Adjust the maximum width as needed
+                maxWidth: "500px", // Adjust the maximum width as needed
               }}
             >
               <Typography

@@ -2,10 +2,10 @@ import { Box, Divider, Grid, Slide, Typography } from "@mui/material";
 import portfolio from "../assets/portfolio.png";
 import "../styles/FontStyles.css";
 
-function About1() {
+function portfolio01() {
   return (
     <div style={{ flexGrow: 1, padding: 16 }}>
-      <Grid container spacing={2} justifyContent="space-evenly" marginY="40px">
+      <Grid container spacing={2} justifyContent="center" marginY="40px">
         <Slide in={true} direction="right" timeout={700}>
           <Grid item xs={12} sm={6} md={6}>
             <Box
@@ -22,7 +22,7 @@ function About1() {
                 className="page-title"
                 sx={{ fontSize: "100px", fontWeight: "700", color: "#333333" }}
               >
-                portfolio..
+                portfolio
               </Typography>
             </Box>
             <Box
@@ -30,7 +30,7 @@ function About1() {
                 padding: 10,
                 backgroundColor: "whitesmoke",
                 textAlign: "left",
-                maxWidth: "500px", // Adjust the maximum width as needed
+                maxWidth: "475px", // Adjust the maximum width as needed
               }}
             >
               <Typography
@@ -46,7 +46,7 @@ function About1() {
               style={{
                 padding: 10,
                 textAlign: "left",
-                maxWidth: "450px", // Adjust the maximum width as needed
+                maxWidth: "500px", // Adjust the maximum width as needed
               }}
             >
               <Typography
@@ -79,4 +79,4 @@ function About1() {
   );
 }
 
-export default About1;
+export default portfolio01;

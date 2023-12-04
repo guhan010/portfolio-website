@@ -10,11 +10,11 @@ function Hobbies() {
             <img
               src={hobbies}
               alt="Profile Picture"
-              style={{ width: "120%", height: "auto", borderRadius: "18px" }}
+              style={{ width: "100%", height: "auto", borderRadius: "18px" }}
             />
           </Box>
         </Grid>
-        <Grid item xs={12} sm={6} md={6}>
+        <Grid item xs={12} sm={6} md={4}>
           <Box
             style={{
               padding: 10,
@@ -23,7 +23,7 @@ function Hobbies() {
               maxWidth: "400px", // Adjust the maximum width as needed
             }}
             marginTop={3}
-            marginLeft="100px"
+            // marginLeft="100px"
           >
             <Typography
               variant="h4"
@@ -38,7 +38,7 @@ function Hobbies() {
               padding: 10,
               textAlign: "left",
               maxWidth: "400px", // Adjust the maximum width as needed
-              margin: "0 100px", // Center align the content,
+              // margin: "0 100px", // Center align the content,
             }}
           >
             <Typography variant="body1" sx={{ fontSize: "14px" }}>
