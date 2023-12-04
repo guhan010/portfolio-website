@@ -1,5 +1,5 @@
 import { useEffect } from "react";
-import Port01 from "../../components/Portfolio/port01";
+import Port01 from "../../components/Portfolio/Port01";
 
 const PortfolioSite = () => {
   useEffect(() => {
