@@ -39,7 +39,7 @@ function About1() {
                 className="title-02"
                 sx={{ fontSize: "25px", color: "#757575", fontWeight: 400 }}
               >
-                I&apos; a Full Stack Developer based in India.
+                I&apos;m a Full Stack Developer based in India.
               </Typography>
             </Box>
             <Box
